@@ -23,9 +23,7 @@
 		width: 30%;
 		float: left;
 		overflow: hidden;
-		text-align: center;
-		margin-top: 5%
-
+		text-align: center
 	}
 	#right {
 		width: 70%;
@@ -94,26 +92,28 @@ function myFunction() {
 
 <div id="contact-main">
 	<div id="left">
-		<h3 style="color:white">Reach Us</h3>
-		<p>
-			Zoo Road , Guwahati <br> 781342 <br> Phone : 75635252<br> 
-			email : info@igniters.com
+		<h3 style="color:white">Office Address</h3>
+		<p style="text-align:left;padding-left:15px">
+			H/No: 26,<br> Bhaskar Nagar,<br>
+			Bye Lane 1 (East)<br>
+			R.G.Baruah Road,<br>Guwahatai-781024, Assam<br><br>
+			Contact No: +91-76360 12999<br>
+			Email: info@igniters.co.in
 		</p>
     </div>
 	<div id="right">
 		<h3 style="color:white">Contact Us</h3>
 		<div class="container">
-		  <form action="/action_page.php">
-			<input type="text" id="fname" name="firstname" placeholder="Your Name..">
-			<input type="text" id="lname" name="lastname" placeholder="Your Email Id..">
-			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		  <form method="post" action="">
+			<input type="text"  name="name" placeholder="Your Name..">
+			<input type="text"  name="email" placeholder="Your Email Id..">
+			<textarea name="comments" placeholder="Write something.." style="height:200px"></textarea>
 			<input type="submit" value="Submit">
 		  </form>
 		</div>
 	</div>	
 </div>
 
-<div style="text-align:center;background-color:#40423e;height:30px">
-	<h6 style="color:white">Copyright &copy; 2017 The Igniters Team, All Rights Reserved</h6>	
-</div>	
- 
+<div style="text-align:center;background-color:#40423e;position:absolute;bottom:0px;width:100%">
+	<h6 style="color:white;font-size:15px;padding-top:6px">Copyright &copy; 2017 The Igniters Team, All Rights Reserved</h6>	
+</div>
