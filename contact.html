@@ -5,10 +5,64 @@
 <head>
 	<link rel="stylesheet" href="style/styles.css">
 	<link rel="stylesheet" href="style/w3.css">
+	<style>
+	html { 
+		  background: url(images/bck2.jpeg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+		
+	#contact-main {
+		overflow: hidden;
+		background-color: black;
+		opacity: .7
+	}	
+	#left {
+		width: 30%;
+		float: left;
+		overflow: hidden;
+		text-align: center;
+		margin-top: 5%
+
+	}
+	#right {
+		width: 70%;
+		float: right;
+		text-align: center;
+	}	
+	
+	input[type=text], select, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+	padding: 10px
+}
+	</style>
 </head>
 
 <body>
-
 <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -37,6 +91,29 @@ function myFunction() {
 </div>	
 </div>
 
-<div style="text-align:center;background-color:#40423e">
-	<h6 style="color:white">Copyright &copy; 2017 The Igniters Team, All Rights Reserved</h6>	
+
+<div id="contact-main">
+	<div id="left">
+		<h3 style="color:white">Reach Us</h3>
+		<p>
+			Zoo Road , Guwahati <br> 781342 <br> Phone : 75635252<br> 
+			email : info@igniters.com
+		</p>
+    </div>
+	<div id="right">
+		<h3 style="color:white">Contact Us</h3>
+		<div class="container">
+		  <form action="/action_page.php">
+			<input type="text" id="fname" name="firstname" placeholder="Your Name..">
+			<input type="text" id="lname" name="lastname" placeholder="Your Email Id..">
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+			<input type="submit" value="Submit">
+		  </form>
+		</div>
+	</div>	
 </div>
+
+<div style="text-align:center;background-color:#40423e;height:30px">
+	<h6 style="color:white">Copyright &copy; 2017 The Igniters Team, All Rights Reserved</h6>	
+</div>	
+ 
